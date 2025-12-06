@@ -1,0 +1,98 @@
+Naive Bayes IRIS Classification - Comparison Summary
+Generated: 2025-12-06 14:33:37
+
+======================================================================
+COMPARISON SUMMARY
+======================================================================
+
+1. PREDICTION AGREEMENT
+----------------------------------------------------------------------
+Overall Accuracy:
+  Custom Implementation:  0.9722 (97.22%)
+  Sklearn Implementation: 0.9722 (97.22%)
+  Difference: 0.000000
+
+2. KEY FINDINGS
+----------------------------------------------------------------------
+[OK] Both implementations achieve nearly identical accuracy
+
+3. IMPLEMENTATION CHARACTERISTICS
+----------------------------------------------------------------------
+Custom NumPy Implementation:
+  + Full control over calculations
+  + Educational value - understand the math
+  + No external dependencies (except NumPy)
+  - May have numerical precision differences
+  - Requires more code
+
+Scikit-learn Implementation:
+  + Highly optimized and tested
+  + Includes variance smoothing by default
+  + Easy to use, minimal code
+  + Well-documented and maintained
+  - Less educational (black box)
+
+======================================================================
+
+======================================================================
+DETAILED METRICS
+======================================================================
+
+CUSTOM IMPLEMENTATION METRICS:
+----------------------------------------------------------------------
+Overall Accuracy: 0.9722
+
+Iris-setosa:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+Iris-versicolor:
+  Accuracy:  1.0000
+  Precision: 0.9231
+  Recall:    1.0000
+  F1-Score:  0.9600
+
+Iris-virginica:
+  Accuracy:  0.9167
+  Precision: 1.0000
+  Recall:    0.9167
+  F1-Score:  0.9565
+
+
+SKLEARN IMPLEMENTATION METRICS:
+----------------------------------------------------------------------
+Overall Accuracy: 0.9722
+
+Iris-setosa:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+Iris-versicolor:
+  Accuracy:  1.0000
+  Precision: 0.9231
+  Recall:    1.0000
+  F1-Score:  0.9600
+
+Iris-virginica:
+  Accuracy:  0.9167
+  Precision: 1.0000
+  Recall:    0.9167
+  F1-Score:  0.9565
+
+
+CONFUSION MATRICES:
+----------------------------------------------------------------------
+
+Custom Implementation:
+[[12  0  0]
+ [ 0 12  0]
+ [ 0  1 11]]
+
+Scikit-learn Implementation:
+[[12  0  0]
+ [ 0 12  0]
+ [ 0  1 11]]
